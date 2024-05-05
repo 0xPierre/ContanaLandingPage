@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', "@nuxtjs/plausible"],
   app: {
     head: {
       title: 'Contana - Logiciel de facturation',
@@ -47,5 +47,9 @@ export default defineNuxtConfig({
         wght: [400, 500, 600, 700]
       }
     }
+  },
+  plausible: {
+    domain: 'contana.fr',
+    apiHost: 'https://plausible.goubaud.com',
   }
 })
