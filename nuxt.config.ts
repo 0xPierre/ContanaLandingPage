@@ -51,5 +51,6 @@ export default defineNuxtConfig({
   plausible: {
     domain: 'contana.fr',
     apiHost: 'https://plausible.goubaud.com',
-  }
+  },
+  compatibilityDate: '2025-05-24'
 })
