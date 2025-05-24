@@ -55,15 +55,6 @@ const close = () => {
             >
               Fonctionnalités
             </RouterLink>
-            <RouterLink
-              :to="{
-                path: '/',
-                hash: '#pricing'
-              }"
-              class="text-body font-medium"
-            >
-              Tarifs
-            </RouterLink>
           </div>
         </div>
         <div class="flex items-center space-x-5">
@@ -122,16 +113,6 @@ const close = () => {
           @click="close"
         >
           Fonctionnalités
-        </RouterLink>
-        <RouterLink
-          :to="{
-            path: '/',
-            hash: '#pricing'
-          }"
-          @click="close"
-          class="text-body font-medium"
-        >
-          Tarifs
         </RouterLink>
         <AppButton to="https://app.contana.fr" variant="primary">
           Me connecter
